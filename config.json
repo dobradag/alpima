@@ -1,0 +1,5 @@
+{
+  "apiBaseUrl": "http://localhost:9010/",
+  "requestTickers": ["VTI", "AAPL", "VOD", "MSFT", "TSLA"],
+  "soomething": "else"
+}

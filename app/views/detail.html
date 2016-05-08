@@ -1,0 +1,22 @@
+<md-toolbar>
+    <div ng-show="detail.gotHeader" layout-padding>
+        <h3>{{detail.ticker.description}} ({{ detail.ticker.code }})</h3>
+        <p>Historical Prices</p>
+    </div>
+</md-toolbar>
+<md-content layout-padding>
+    <div ng-if="detail.gotOhlcChart" layout="column">
+        <h4>OHLC Chart</h4>
+
+        <nvd3 options="detail.ohlcChartOptions"
+              data="detail.ohlcChartData"
+              class="with-3d-shadow with-transitions" flex></nvd3>
+    </div>
+
+    <div ng-if="detail.gotVolumeChart" layout="column">
+        <h4>Volume Chart</h4>
+        <nvd3 options="detail.volumeChartOptions"
+              data="detail.volumeChartData"
+              class="with-3d-shadow with-transitions" flex></nvd3>
+    </div>
+</md-content>

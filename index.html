@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- build:css app.css -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+    <!-- endbuild -->
+
+    <meta charset="UTF-8">
+    <title>Alpima Test</title>
+</head>
+<body ng-app="alpimaTest">
+
+<!-- build:js app.js -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+<script src="bower_components/d3/d3.js"></script>
+<script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+<script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+
+
+<script src="app/app.js"></script>
+<script src="app/templateCache.js"></script>
+<script src="app/services/config.factory.js"></script>
+<script src="app/services/toast.factory.js"></script>
+<script src="app/models/chart.js"></script>
+<script src="app/controllers/main.controller.js"></script>
+<script src="app/controllers/list.controller.js"></script>
+<script src="app/controllers/detail.controller.js"></script>
+<!-- endbuild -->
+
+<div ui-view></div>
+</body>
+</html>

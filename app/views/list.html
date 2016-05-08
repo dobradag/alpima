@@ -1,0 +1,11 @@
+<div>
+    <md-list>
+        <md-list-item class="md-2-line" ng-repeat="item in list.tickers" ng-click="list.showDetails(item.code)">
+            <div class="md-list-item-text">
+                <h3>{{ item.code }}</h3>
+                <p>{{item.description}}</p>
+            </div>
+
+        </md-list-item>
+    </md-list>
+</div>
